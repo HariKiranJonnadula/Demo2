@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* VERTICAL NAVIGATION BAR */
+    .vertical-nav {
+      width: 200px;
+      border: 2px solid gray;
+      background-color: lightblue;
+      float: left;
+      margin: 20px;
+    }
+
+    .vertical-nav a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 18px;
+      color: blue;
+    }
+
+    .vertical-nav a:first-child {
+      background-color: orange;
+      color: white;
+      font-weight: bold;
+    }
+
+    .vertical-nav a:hover {
+      background-color: #ddd;
+    }
+
+    /* HORIZONTAL NAVIGATION BAR */
+    .horizontal-nav {
+      margin: 20px;
+      padding: 10px;
+      overflow: hidden;
+      background-color: lightgray;
+      border: 2px solid gray;
+    }
+
+    .horizontal-nav a {
+      float: left;
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: blue;
+      border-right: 1px solid purple;
+    }
+
+    .horizontal-nav a:first-child {
+      background-color: #555;
+      color: white;
+      font-weight: bold;
+    }
+
+    .horizontal-nav a:hover {
+      background-color: #ddd;
+    }
+
+    /* Container to center */
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Vertical Navigation Bar -->
+  <div class="vertical-nav">
+    <a href="#">Home</a>
+    <a href="#">Java</a>
+    <a href="#">CSS</a>
+    <a href="#">HTML</a>
+    <a href="#">Bootstrap</a>
+  </div>
+
+  <!-- Horizontal Navigation Bar -->
+  <div>
+    <div class="horizontal-nav">
+      <a href="#">Home</a>
+      <a href="#">Java</a>
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
